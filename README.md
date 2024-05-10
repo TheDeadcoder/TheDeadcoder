@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Nazmus Sakib. I am an undergraduate student majoring in CSE in Bangladesh University of Engineering and Technology. I am currently in Level 4, Term 1</h1>
-<h5 align="center">I am a passionate developer and a problem solver. I try to harness the power of Generative AI to solve real-world problems. I have participated in several hackathons and familiar with facing challenges. I am an expert in codeforces and participated in several IUPCs. Also I am a deep learning enthusiast</h5>
+<h3 align="center">I am a passionate developer and a problem solver. I try to harness the power of Generative AI to solve real-world problems. I have participated in several hackathons and familiar with facing challenges. I am an expert in codeforces and participated in several IUPCs. Also I am a deep learning enthusiast</h3>
 
 - 🌱 I’m currently learning **Pytorch, AWS**
 - 💻 I’m also preparing for job interviews  
