@@ -42,5 +42,4 @@ Github Stats
 | Position | Company | Duration | Skills |
 |----------|---------|----------|--------|
 | Junior Software Engineer | Priyo | Jun 2024 - Present | Django, FastAPI, Metabase, Sendgrid |
-| Software Developer | Oleyn AI | Jun 2024 - Present | FastAPI, Qdrant, OpenAI, Diarization, Model Fine-tuning |
 | Software Intern | Yobo | Mar 2024 - Jun 2024 | MariaDB, OpenAI, Qdrant, Langchain |
