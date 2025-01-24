@@ -7,7 +7,7 @@
 - 🌱 I'm currently learning Machine Learning, DevOps, PyTorch
 - 💻 I'm also preparing for job interviews
 - 📫 How to reach me: sakibbuet2k19@gmail.com
-- 📄 Know about my experiences [My Resume](https://drive.google.com/file/d/1dOITduansEE-qCuIHepZa1yEqx2Mqp0g/view?usp=sharing)
+- 📄 Here is my Resume [My Resume](https://drive.google.com/file/d/1JIuZ2MwAO8bHmN28y7p20M5hGeigSR9U/view?usp=sharing)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
