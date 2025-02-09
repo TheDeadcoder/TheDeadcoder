@@ -3,6 +3,7 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=thedeadcoder&label=Profile%20views&color=0e75b6&style=flat" alt="thedeadcoder" /> </p>
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=thedeadcoder" alt="thedeadcoder" /></a> </p>
 
+- 🌐 **Check out my portfolio:** [My Portfolio](https://thedeadcoder.github.io/) 
 - 🔭 I'm currently working as a Software Engineer at Priyo
 - 🌱 I'm currently learning Machine Learning, DevOps, PyTorch
 - 💻 I'm also preparing for job interviews
