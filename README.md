@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Nazmus Sakib. I am an undergraduate student majoring in CSE in Bangladesh University of Engineering and Technology. I am currently in Level 4, Term 2</h1>
+<h1 align="center">Hi 👋, I'm Nazmus Sakib.</h1>
 <h3 align="center">I am a passionate developer, a Generative-AI enthusiast and a problem solver. I try to harness the power of Generative AI to solve real-world problems. I have participated in several hackathons and familiar with facing challenges. I am an expert in codeforces and participated in several IUPCs. Also I am a deep learning enthusiast.</h3>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=thedeadcoder&label=Profile%20views&color=0e75b6&style=flat" alt="thedeadcoder" /> </p>
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=thedeadcoder" alt="thedeadcoder" /></a> </p>
