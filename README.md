@@ -30,13 +30,8 @@
 <h3 align="left">Github Stats</h3>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=TheDeadcoder&show_icons=true&locale=en&layout=compact" alt="TheDeadcoder" />
-  <br/><br/>
-  
-  <img src="https://github-readme-stats.vercel.app/api?username=TheDeadcoder&show_icons=true&locale=en" alt="thedeadcoder" />
-  <br/><br/>
-  
-  <img src="https://github-readme-streak-stats.demolab.com/?user=TheDeadcoder" alt="TheDeadcoder" />
+<p><img align="left" src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=TheDeadcoder&show_icons=true&locale=en&layout=compact" alt="TheDeadcoder" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats-fast.vercel.app/api?username=TheDeadcoder&show_icons=true&locale=en" alt="TheDeadcoder" /></p>
 </div>
 
 ## Competition Performances 🏆
