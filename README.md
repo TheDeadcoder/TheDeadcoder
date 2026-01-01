@@ -4,7 +4,7 @@
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=thedeadcoder" alt="thedeadcoder" /></a> </p>
 
 - 🌐 **Check out my portfolio:** [My Portfolio](https://portfolio.nazmus-sakib-touhid.app/) 
-- 🌱 I'm currently learning Machine Learning, DevOps, PyTorch
+- 🌱 I'm currently learning Reinforcement Learning, AWS, Distributed training
 - 💻 I'm also preparing for job interviews
 - 📫 How to reach me: sakibbuet2k19@gmail.com
 - 📄 Here is my Resume [My Resume](https://drive.google.com/file/d/1JIuZ2MwAO8bHmN28y7p20M5hGeigSR9U/view?usp=sharing)
