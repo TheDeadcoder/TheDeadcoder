@@ -1,7 +1,11 @@
 <h1 align="center">Nazmus Sakib</h1>
 
 <p align="center">
-  <b>Reinforcement Learning for LLM Post-Training · RL Environment Design · Applied AI Systems</b>
+  <b>AI Engineer &amp; Researcher</b>
+</p>
+
+<p align="center">
+  RL post-training · Agentic systems · Full-stack AI products
 </p>
 
 <p align="center">
@@ -17,39 +21,46 @@
 
 ## About
 
-I work on reinforcement learning for language model post-training — reward design, GRPO and its
-variants, and the custom environments that make verifiable RL possible in domains where no
-benchmark exists yet. My interest is in the part of the problem that is usually skipped: building
-the simulator, the verifier, and the reward signal, then measuring honestly whether RL earned its
-compute over supervised fine-tuning.
+I build language-model systems end to end - the reinforcement learning that trains a policy, the
+agent architecture that puts it to work, and the product it ships inside.
 
-Alongside that, I build production AI systems — retrieval pipelines, agentic backends, and
-inference stacks — and I care about low-resource language evaluation, particularly Bengali.
+My research is in RL post-training: reward design, GRPO and its variants, and the custom environments
+that make verifiable RL possible in domains where no benchmark exists yet. I'm drawn to the part
+usually skipped - building the simulator, the verifier and the reward signal, then measuring
+honestly whether RL earned its compute over supervised fine-tuning.
 
-CSE, BUET (CGPA 3.82/4.00). Based in Dhaka, open to remote research collaboration.
+The engineering half is agentic. Memory architectures that let agents carry context across sessions
+(the subject of my WOA 2025 paper), tool calling and multi-step orchestration, graph and hybrid
+retrieval, and the adversarial testing that shows where those tool chains break. Around all of it
+sits the ordinary work that decides whether a model ever reaches a user: inference services, vector
+search, auth, payments, realtime web and mobile clients, and the CI that ships them. I also care
+about low-resource language evaluation, particularly Bengali.
+
+CSE, BUET. Based in Dhaka, open to remote research collaboration.
 
 ---
 
-## Research Focus
+## What I Work On
 
-| Area | What I work on |
+| Layer | Focus |
 |---|---|
-| **RL post-training** | GRPO and variants (DAPO, Dr. GRPO, GSPO, RLOO); multi-signal reward design; measuring RL headroom over SFT |
-| **RL environments** | Physics-grounded simulators, verifiable reward harnesses, OpenEnv-compatible environments |
-| **Reliability & systems agents** | Fault-injection scenarios, incident-resolution benchmarks, agents that operate infrastructure |
-| **Low-resource evaluation** | Adversarial safety datasets and cross-lingual failure analysis for Bengali |
+| **Research - RL post-training** | GRPO and variants (DAPO, Dr. GRPO, GSPO, RLOO) · multi-signal reward design · physics-grounded and verifiable environments · measuring RL headroom over SFT |
+| **Agentic systems** | Agent memory architectures · tool calling and multi-step orchestration · GraphRAG and hybrid retrieval · structured output and evaluation harnesses · adversarial testing of agent tool chains |
+| **Full-stack delivery** | Inference services and quantised local deployment · vector search · auth, payments and background jobs · Next.js / SvelteKit / Flutter clients · Docker and GitHub Actions |
+| **Reliability & evaluation** | Fault-injection scenarios for incident-resolution benchmarks · adversarial safety datasets for Bengali and other low-resource languages |
 
 ---
 
 ## Publication
 
 **MemAgent: A Cache-Inspired Framework for Augmenting Conversational Web Agents with Task-Specific Information**
-*N. Sakib, P. Barai, S. I. Parisa, A. Iqbal* — WOA 2025, 26th Workshop *From Objects to Agents*, Trento, Italy.
+*N. Sakib, P. Barai, S. I. Parisa, A. Iqbal* - WOA 2025, 26th Workshop *From Objects to Agents*, Trento, Italy.
 [CEUR-WS Vol-4028, Paper 8](https://ceur-ws.org/Vol-4028/paper8.pdf)
 
-A cache-inspired Memory Cache Bank with time-based expiration that decouples information gathering
-from task execution in web agents. Reduces average conversation turns by 22.4% (5.00 → 3.88) across
-150 Mind2Web tasks; a 15-participant study showed a 58% reduction in completion time for recurring tasks.
+An agent memory architecture: a Memory Cache Bank with time-based expiration that decouples
+information gathering from task execution, so an agent stops re-asking users for details it has
+already learned. Reduces average conversation turns by 22.4% (5.00 → 3.88) across 150 Mind2Web
+tasks; a 15-participant study showed a 58% reduction in completion time for recurring tasks.
 
 ---
 
@@ -59,10 +70,19 @@ from task execution in web agents. Reduces average conversation turns by 22.4% (
 
 | Repository | Description | Stack |
 |---|---|---|
-| **[dc_ops_environment](https://github.com/TheDeadcoder/dc_ops_environment)** | Physics-grounded datacenter RL environment — RC thermal networks and continuous multi-objective rewards, built on OpenEnv | OpenEnv · Physics sim |
+| **[dc_ops_environment](https://github.com/TheDeadcoder/dc_ops_environment)** | Physics-grounded datacenter RL environment - RC thermal networks and continuous multi-objective rewards, built on OpenEnv | OpenEnv · Physics sim |
 | **[dc_ops_training](https://github.com/TheDeadcoder/dc_ops_training)** | Teacher-distilled SFT → GRPO pipeline on AMD MI300X. Multi-signal reward (physics, scenario heuristics, anti-looping, format) drove +188% composite reward and a 10× per-step gain on hard multi-fault scenarios | GRPO · TRL · Unsloth · vLLM · ROCm |
 | **[GeoQL-4B](https://github.com/TheDeadcoder/GeoQL-4B)** | Text-to-OverpassQL via SFT → GRPO on Qwen3-4B, with a documented negative result on reward redundancy in reference-based reward design | GRPO · Qwen3 · vLLM |
 | **[medical-cot-assistant](https://github.com/TheDeadcoder/medical-cot-assistant)** | Clinical chain-of-thought fine-tuning of a 20B model with QAT and LLM-as-a-Judge evaluation; INT4 + GGUF export for local inference | Unsloth · QAT · llama.cpp |
+
+### Agentic Systems & Retrieval
+
+| Repository | Description | Stack |
+|---|---|---|
+| **[civilmate-backend](https://github.com/TheDeadcoder/civilmate-backend)** | Agentic GraphRAG over building codes - plans multi-step lookups across a code graph, then compares design drawings against site imagery to generate technical logs and blocker alerts | Neo4j · Qdrant · FastAPI |
+| **[InsightAI-python-backend](https://github.com/TheDeadcoder/InsightAI-python-backend)** | Microservices AI platform - tool-routed generation of quizzes and flashcards from PDFs and video, enforced structured output, and CLIP-based multimodal product search | LlamaIndex · Qdrant · CLIP · FastAPI |
+| **[Tokkhok-Backend](https://github.com/TheDeadcoder/Tokkhok-Backend)** | Personalised RAG chatbot for "Banglish" (romanised Bengali) with a custom transliteration pipeline, few-shot inference and configurable agent personas | FastAPI · Qdrant · PostgreSQL |
+| **[sust-backend](https://github.com/TheDeadcoder/sust-backend)** | Bebsha AI service layer - RAG product search, description generation, background removal | Flask · RAG |
 
 ### Applied Deep Learning
 
@@ -70,26 +90,17 @@ from task execution in web agents. Reduces average conversation turns by 22.4% (
 |---|---|---|
 | **[bd-prescription-medicine-recognize](https://github.com/TheDeadcoder/bd-prescription-medicine-recognize)** | ResNet50–CRNN for 78-class handwritten medicine-name recognition on Bangladeshi prescriptions. Hash-grouped StratifiedGroupKFold + SWA ensemble reached 92.53% test accuracy / 0.9234 macro-F1 (+6.44 pt over baseline) | PyTorch · CRNN · SWA · MLflow · Grad-CAM |
 
-### Agentic AI & Retrieval Systems
-
-| Repository | Description | Stack |
-|---|---|---|
-| **[civilmate-backend](https://github.com/TheDeadcoder/civilmate-backend)** | Agentic GraphRAG over building codes; compares design drawings against site imagery to generate technical logs | Neo4j · Qdrant · FastAPI |
-| **[InsightAI-python-backend](https://github.com/TheDeadcoder/InsightAI-python-backend)** | Microservices EdTech platform — quiz/flashcard generation from PDFs and video, plus CLIP-based multimodal product search | LlamaIndex · Qdrant · CLIP · FastAPI |
-| **[Tokkhok-Backend](https://github.com/TheDeadcoder/Tokkhok-Backend)** | Personalised RAG chatbot for "Banglish" (romanised Bengali) with a custom transliteration pipeline and configurable personas | FastAPI · Qdrant · PostgreSQL |
-| **[sust-backend](https://github.com/TheDeadcoder/sust-backend)** | Bebsha AI service layer — RAG product search, description generation, background removal | Flask · RAG |
-
 ### Systems & Reliability
 
 | Repository | Description | Stack |
 |---|---|---|
-| **[SREGym](https://github.com/TheDeadcoder/SREGym)** | Contributed fault-injection scenarios to an incident-resolution benchmark for AI agents — Kafka poison-pill head-of-line blocking, CFS throttling brownout, and oscillating config corruption | Kubernetes · Kafka · Chaos engineering |
+| **[SREGym](https://github.com/TheDeadcoder/SREGym)** | Contributed fault-injection scenarios to an incident-resolution benchmark for AI agents - Kafka poison-pill head-of-line blocking, CFS throttling brownout, and oscillating config corruption | Kubernetes · Kafka · Chaos engineering |
 
 ### Full-Stack Products
 
 | Repository | Description | Stack |
 |---|---|---|
-| **[nerdherd2ndrun](https://github.com/TheDeadcoder/nerdherd2ndrun)** | Collaborative productivity platform — shared notes, video calls, real-time quizzes, AI assistant | SvelteKit · Firebase |
+| **[nerdherd2ndrun](https://github.com/TheDeadcoder/nerdherd2ndrun)** | Collaborative productivity platform - shared notes, video calls, real-time quizzes, AI assistant | SvelteKit · Firebase |
 | **[coderhub](https://github.com/TheDeadcoder/coderhub)** | Developer community platform with blogging, skill-based search, and project management | SvelteKit · Vercel |
 | **[yobofrontend](https://github.com/TheDeadcoder/yobofrontend)** | Frontend for YoboSQL, a text-to-SQL conversational interface | TypeScript · SvelteKit |
 
@@ -120,11 +131,11 @@ Published on [Hugging Face @Melikshah](https://huggingface.co/Melikshah).
 
 | Role | Organisation | Focus |
 |---|---|---|
-| Lecturer, CSE | **BRAC University** · 2025– | Machine Learning, Operating Systems, Software Engineering, System Analysis & Design |
-| Founding Engineer (Backend & AI) | **Intellesphere** · 2024–25 | Banking RAG with hybrid indexing, CLIP multimodal search, multimodal civil-engineering automation |
-| Founding Engineer (Backend & AI) | **Oleyn** · 2024 | Bengali ASR with NeMo diarization, AI CRM, legal research assistant |
-| Software Engineer (Backend) | **Priyo** · 2024 | Django support agent at concurrency, warehousing APIs, campaign infrastructure |
-| Software Engineer Intern | **Yobo** · 2024 | Text-to-SQL chat interface on LangChain and FastAPI |
+| Lecturer, CSE | **BRAC University** · present | Machine Learning, Operating Systems, Software Engineering, System Analysis & Design |
+| Founding Engineer (Backend & AI) | **Intellesphere** · 2024–25 | Banking RAG with hybrid indexing and Keycloak-secured access, CLIP multimodal search, multimodal civil-engineering automation |
+| Founding Engineer (Backend & AI) | **Oleyn** · 2024 | Bengali ASR with NeMo speaker diarization, agentic CRM and campaign system, legal research assistant |
+| Software Engineer (Backend) | **Priyo** · 2024 | Django support agent at concurrency, warehousing REST APIs, campaign and analytics infrastructure |
+| Software Engineer Intern | **Yobo** · 2024 | Text-to-SQL chat interface on LangChain, FastAPI and SvelteKit |
 
 ---
 
@@ -133,13 +144,13 @@ Published on [Hugging Face @Melikshah](https://huggingface.co/Melikshah).
 | Domain | Tools |
 |---|---|
 | **Languages** | Python · C++ · Java · TypeScript · JavaScript · SQL |
-| **Training & Inference** | PyTorch · TRL · Unsloth · PEFT/LoRA · vLLM · llama.cpp · ROCm · Transformers · NeMo |
-| **RL** | GRPO family (DAPO, Dr. GRPO, GSPO, RLOO) · reward design · custom environments · OpenEnv |
-| **LLM Systems** | RAG · GraphRAG · LangChain · LlamaIndex · agentic pipelines · evaluation harnesses |
-| **Backend** | FastAPI · Django · Spring Boot · Express · AWS Lambda · Firebase Functions |
-| **Data** | PostgreSQL · MySQL · Redis · Qdrant · ChromaDB · Neo4j · Supabase |
-| **Infrastructure** | Docker · Kubernetes · Terraform · AWS · GCP · Modal · Nginx · GitHub Actions |
-| **Frontend** | Next.js · React · SvelteKit · Flutter · Tailwind CSS |
+| **Training & Inference** | PyTorch · TRL · Unsloth · PEFT/LoRA · vLLM · llama.cpp · ROCm · Transformers · NeMo · scikit-learn · MLflow |
+| **Reinforcement Learning** | GRPO family (DAPO, Dr. GRPO, GSPO, RLOO) · reward design · custom verifiable environments · OpenEnv |
+| **Agentic Systems** | Tool calling · agent memory · multi-step orchestration · LangChain · LlamaIndex · Genkit · RAG · GraphRAG · hybrid retrieval · structured output · eval harnesses |
+| **Backend & APIs** | FastAPI · Django · Spring Boot · Express · Firebase Cloud Functions · Nginx · Keycloak · Stripe |
+| **Frontend & Mobile** | Next.js · React · SvelteKit · Flutter · Tailwind CSS |
+| **Data & Vector Stores** | PostgreSQL · MySQL · Redis · Qdrant · ChromaDB · Neo4j · Supabase · Turso |
+| **Infrastructure** | Docker · Kubernetes · AWS · GCP · Vercel · Modal · GitHub Actions · PostHog |
 
 ---
 
@@ -156,7 +167,7 @@ Published on [Hugging Face @Melikshah](https://huggingface.co/Melikshah).
   </picture>
 </p>
 
-<p align="center"><sub>Rendered nightly by a GitHub Action and committed to this repository — no third-party service, no rate limits.</sub></p>
+<p align="center"><sub>Rendered nightly by a GitHub Action and committed to this repository - no third-party service, no rate limits.</sub></p>
 
 ---
 
@@ -164,7 +175,7 @@ Published on [Hugging Face @Melikshah](https://huggingface.co/Melikshah).
 
 | Award | Event | Year |
 |---|---|---|
-| Champion | IUT 11th National ICT Fest — OpenAPI Hackathon | 2024 |
+| Champion | IUT 11th National ICT Fest - OpenAPI Hackathon | 2024 |
 | Champion | CodeCrafters Dev Sprint Hackathon, BUET | 2024 |
 | Champion | SUST CSE Carnival Hackathon | 2024 |
 | Runner-Up | Gen-Dev Hackathon, Acme AI | 2024 |
