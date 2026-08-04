@@ -167,8 +167,6 @@ Published on [Hugging Face @Melikshah](https://huggingface.co/Melikshah).
   </picture>
 </p>
 
-<p align="center"><sub>Rendered nightly by a GitHub Action and committed to this repository - no third-party service, no rate limits.</sub></p>
-
 ---
 
 ## Selected Honours
