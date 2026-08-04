@@ -1,0 +1,49 @@
+<svg width="440" height="210" viewBox="0 0 440 210" fill="none"
+     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Language Distribution">
+  <style>
+    .f { font-family: ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Noto Sans,Helvetica,Arial,sans-serif; }
+    .t { font-size: 13px; font-weight: 600; fill: #4493f8; letter-spacing: .01em; }
+    .n { font-size: 21px; font-weight: 600; fill: #f0f6fc; }
+    .l { font-size: 10px; font-weight: 500; fill: #9198a1;
+         letter-spacing: .07em; text-transform: uppercase; }
+    .s { font-size: 10.5px; fill: #9198a1; }
+    .k { font-size: 11.5px; font-weight: 500; fill: #f0f6fc; }
+  </style>
+  <rect x="0.5" y="0.5" width="439" height="209" rx="10"
+        fill="#0d1117" stroke="#3d444d"/>
+  <g class="f">
+    <text x="24" y="32" class="t">Language Distribution</text>
+    <line x1="24" y1="44" x2="416" y2="44" stroke="#3d444d"/>
+    <mask id="bar"><rect x="24" y="66" width="392" height="9" rx="4.5" fill="#fff"/></mask>
+  <g mask="url(#bar)">
+    <rect x="24.00" y="66" width="179.08" height="9" fill="#DA5B0B"/>
+    <rect x="203.08" y="66" width="77.00" height="9" fill="#3572A5"/>
+    <rect x="280.07" y="66" width="62.09" height="9" fill="#ff3e00"/>
+    <rect x="342.16" y="66" width="32.40" height="9" fill="#87AED7"/>
+    <rect x="374.56" y="66" width="29.30" height="9" fill="#3178c6"/>
+    <rect x="403.86" y="66" width="7.85" height="9" fill="#e34c26"/>
+    <rect x="411.71" y="66" width="4.29" height="9" fill="#9198a1"/>
+  </g>
+    <circle cx="28" cy="104" r="4.5" fill="#DA5B0B"/>
+    <text x="40" y="108" class="k">Jupyter Notebook</text>
+    <text x="200" y="108" class="s" text-anchor="end">45.7%</text>
+    <circle cx="228" cy="104" r="4.5" fill="#3572A5"/>
+    <text x="240" y="108" class="k">Python</text>
+    <text x="400" y="108" class="s" text-anchor="end">19.6%</text>
+    <circle cx="28" cy="130" r="4.5" fill="#ff3e00"/>
+    <text x="40" y="134" class="k">Svelte</text>
+    <text x="200" y="134" class="s" text-anchor="end">15.8%</text>
+    <circle cx="228" cy="130" r="4.5" fill="#87AED7"/>
+    <text x="240" y="134" class="k">NewLisp</text>
+    <text x="400" y="134" class="s" text-anchor="end">8.3%</text>
+    <circle cx="28" cy="156" r="4.5" fill="#3178c6"/>
+    <text x="40" y="160" class="k">TypeScript</text>
+    <text x="200" y="160" class="s" text-anchor="end">7.5%</text>
+    <circle cx="228" cy="156" r="4.5" fill="#e34c26"/>
+    <text x="240" y="160" class="k">HTML</text>
+    <text x="400" y="160" class="s" text-anchor="end">2.0%</text>
+    <circle cx="28" cy="182" r="4.5" fill="#9198a1"/>
+    <text x="40" y="186" class="k">Other</text>
+    <text x="200" y="186" class="s" text-anchor="end">1.1%</text>
+  </g>
+</svg>
