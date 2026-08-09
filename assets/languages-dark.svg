@@ -16,29 +16,29 @@
     <line x1="24" y1="44" x2="416" y2="44" stroke="#3d444d"/>
     <mask id="bar"><rect x="24" y="66" width="392" height="9" rx="4.5" fill="#fff"/></mask>
   <g mask="url(#bar)">
-    <rect x="24.00" y="66" width="178.79" height="9" fill="#DA5B0B"/>
-    <rect x="202.79" y="66" width="77.49" height="9" fill="#3572A5"/>
-    <rect x="280.29" y="66" width="61.99" height="9" fill="#ff3e00"/>
-    <rect x="342.28" y="66" width="32.35" height="9" fill="#87AED7"/>
-    <rect x="374.63" y="66" width="29.26" height="9" fill="#3178c6"/>
-    <rect x="403.88" y="66" width="7.83" height="9" fill="#e34c26"/>
-    <rect x="411.72" y="66" width="4.28" height="9" fill="#9198a1"/>
+    <rect x="24.00" y="66" width="178.44" height="9" fill="#DA5B0B"/>
+    <rect x="202.44" y="66" width="78.12" height="9" fill="#3572A5"/>
+    <rect x="280.56" y="66" width="61.87" height="9" fill="#ff3e00"/>
+    <rect x="342.42" y="66" width="32.28" height="9" fill="#87AED7"/>
+    <rect x="374.71" y="66" width="29.20" height="9" fill="#3178c6"/>
+    <rect x="403.91" y="66" width="7.82" height="9" fill="#e34c26"/>
+    <rect x="411.73" y="66" width="4.27" height="9" fill="#9198a1"/>
   </g>
     <circle cx="28" cy="104" r="4.5" fill="#DA5B0B"/>
     <text x="40" y="108" class="k">Jupyter Notebook</text>
-    <text x="200" y="108" class="s" text-anchor="end">45.6%</text>
+    <text x="200" y="108" class="s" text-anchor="end">45.5%</text>
     <circle cx="228" cy="104" r="4.5" fill="#3572A5"/>
     <text x="240" y="108" class="k">Python</text>
-    <text x="400" y="108" class="s" text-anchor="end">19.8%</text>
+    <text x="400" y="108" class="s" text-anchor="end">19.9%</text>
     <circle cx="28" cy="130" r="4.5" fill="#ff3e00"/>
     <text x="40" y="134" class="k">Svelte</text>
     <text x="200" y="134" class="s" text-anchor="end">15.8%</text>
     <circle cx="228" cy="130" r="4.5" fill="#87AED7"/>
     <text x="240" y="134" class="k">NewLisp</text>
-    <text x="400" y="134" class="s" text-anchor="end">8.3%</text>
+    <text x="400" y="134" class="s" text-anchor="end">8.2%</text>
     <circle cx="28" cy="156" r="4.5" fill="#3178c6"/>
     <text x="40" y="160" class="k">TypeScript</text>
-    <text x="200" y="160" class="s" text-anchor="end">7.5%</text>
+    <text x="200" y="160" class="s" text-anchor="end">7.4%</text>
     <circle cx="228" cy="156" r="4.5" fill="#e34c26"/>
     <text x="240" y="160" class="k">HTML</text>
     <text x="400" y="160" class="s" text-anchor="end">2.0%</text>
