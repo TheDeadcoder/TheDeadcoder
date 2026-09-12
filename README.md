@@ -1,16 +1,16 @@
 <h1 align="center">Nazmus Sakib</h1>
 
 <p align="center">
-  <b>AI Engineer &amp; Researcher</b>
+  <b>Lecturer, Computer Science and Engineering</b> · BRAC University
 </p>
 
 <p align="center">
-  RL post-training · Agentic systems · Full-stack AI products
+  AI for SWE · LLM post-training · AI safety · Agent orchestration
 </p>
 
 <p align="center">
   <a href="https://portfolio.nazmus-sakib-touhid.app/"><img src="https://img.shields.io/badge/Portfolio-1f2328?style=flat-square&logo=readdotcv&logoColor=white" alt="Portfolio"></a>
-  <a href="https://ceur-ws.org/Vol-4028/paper8.pdf"><img src="https://img.shields.io/badge/Publication-1f2328?style=flat-square&logo=googlescholar&logoColor=white" alt="Publication"></a>
+  <a href="https://scholar.google.com/citations?hl=en&user=b50aVhQAAAAJ"><img src="https://img.shields.io/badge/Publication-1f2328?style=flat-square&logo=googlescholar&logoColor=white" alt="Scholar"></a>
   <a href="https://huggingface.co/Melikshah"><img src="https://img.shields.io/badge/Hugging%20Face-1f2328?style=flat-square&logo=huggingface&logoColor=FFD21E" alt="Hugging Face"></a>
   <a href="https://linkedin.com/in/nazmus-sakib-touhid-a43533205"><img src="https://img.shields.io/badge/LinkedIn-1f2328?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://codeforces.com/profile/melikshah"><img src="https://img.shields.io/badge/Codeforces-1f2328?style=flat-square&logo=codeforces&logoColor=white" alt="Codeforces"></a>
@@ -21,140 +21,128 @@
 
 ## About
 
-I build language-model systems end to end - the reinforcement learning that trains a policy, the
-agent architecture that puts it to work, and the product it ships inside.
+I did my undergrad in CSE at BUET and now lecture in the same field at BRAC University. My research interest lies at the intersection of four connected areas: AI for software engineering and SRE, LLM post-training, AI safety, and agent orchestration. Before moving into research, I spent several years as a full-stack and AI engineer, shipping production systems. 
 
-My research is in RL post-training: reward design, GRPO and its variants, and the custom environments
-that make verifiable RL possible in domains where no benchmark exists yet. I'm drawn to the part
-usually skipped - building the simulator, the verifier and the reward signal, then measuring
-honestly whether RL earned its compute over supervised fine-tuning.
-
-The engineering half is agentic. Memory architectures that let agents carry context across sessions
-(the subject of my WOA 2025 paper), tool calling and multi-step orchestration, graph and hybrid
-retrieval, and the adversarial testing that shows where those tool chains break. Around all of it
-sits the ordinary work that decides whether a model ever reaches a user: inference services, vector
-search, auth, payments, realtime web and mobile clients, and the CI that ships them. I also care
-about low-resource language evaluation, particularly Bengali.
-
-CSE, BUET. Based in Dhaka, open to remote research collaboration.
-
----
-
-## What I Work On
-
-| Layer | Focus |
-|---|---|
-| **Research - RL post-training** | GRPO and variants (DAPO, Dr. GRPO, GSPO, RLOO) · multi-signal reward design · physics-grounded and verifiable environments · measuring RL headroom over SFT |
-| **Agentic systems** | Agent memory architectures · tool calling and multi-step orchestration · GraphRAG and hybrid retrieval · structured output and evaluation harnesses · adversarial testing of agent tool chains |
-| **Full-stack delivery** | Inference services and quantised local deployment · vector search · auth, payments and background jobs · Next.js / SvelteKit / Flutter clients · Docker and GitHub Actions |
-| **Reliability & evaluation** | Fault-injection scenarios for incident-resolution benchmarks · adversarial safety datasets for Bengali and other low-resource languages |
+Based in Dhaka, open to remote research collaboration.
 
 ---
 
 ## Publication
 
 **MemAgent: A Cache-Inspired Framework for Augmenting Conversational Web Agents with Task-Specific Information**
-*N. Sakib, P. Barai, S. I. Parisa, A. Iqbal* - WOA 2025, 26th Workshop *From Objects to Agents*, Trento, Italy.
-[CEUR-WS Vol-4028, Paper 8](https://ceur-ws.org/Vol-4028/paper8.pdf)
-
-An agent memory architecture: a Memory Cache Bank with time-based expiration that decouples
-information gathering from task execution, so an agent stops re-asking users for details it has
-already learned. Reduces average conversation turns by 22.4% (5.00 → 3.88) across 150 Mind2Web
-tasks; a 15-participant study showed a 58% reduction in completion time for recurring tasks.
+<br>N. Sakib, P. Barai, S. I. Parisa, A. Iqbal · WOA 2025, *From Objects to Agents*, Trento, Italy
+<br>[CEUR-WS Vol-4028, Paper 8](https://ceur-ws.org/Vol-4028/paper8.pdf)
 
 ---
 
-## Selected Repositories
+## Selected Work
 
-### Reinforcement Learning & LLM Post-Training
+### 🔧 AI for software engineering and SRE
 
-| Repository | Description | Stack |
-|---|---|---|
-| **[dc_ops_environment](https://github.com/TheDeadcoder/dc_ops_environment)** | Physics-grounded datacenter RL environment - RC thermal networks and continuous multi-objective rewards, built on OpenEnv | OpenEnv · Physics sim |
-| **[dc_ops_training](https://github.com/TheDeadcoder/dc_ops_training)** | Teacher-distilled SFT → GRPO pipeline on AMD MI300X. Multi-signal reward (physics, scenario heuristics, anti-looping, format) drove +188% composite reward and a 10× per-step gain on hard multi-fault scenarios | GRPO · TRL · Unsloth · vLLM · ROCm |
-| **[GeoQL-4B](https://github.com/TheDeadcoder/GeoQL-4B)** | Text-to-OverpassQL via SFT → GRPO on Qwen3-4B, with a documented negative result on reward redundancy in reference-based reward design | GRPO · Qwen3 · vLLM |
-| **[medical-cot-assistant](https://github.com/TheDeadcoder/medical-cot-assistant)** | Clinical chain-of-thought fine-tuning of a 20B model with QAT and LLM-as-a-Judge evaluation; INT4 + GGUF export for local inference | Unsloth · QAT · llama.cpp |
+- **[SREGym `#790`](https://github.com/SREGym/SREGym/pull/790)** · Upstream contribution to the incident-resolution benchmark. A Kafka poison-pill head-of-line block, with an oracle that proves recovery in Kafka itself.
+- **[SREMut](https://github.com/TheDeadcoder/SREMut)** · Follow-up to the SREGym work. Mutation testing a benchmark's own verifier to measure what a passing verdict certifies. *In progress.*
 
-### Agentic Systems & Retrieval
+### 🧪 LLM post-training
 
-| Repository | Description | Stack |
-|---|---|---|
-| **[civilmate-backend](https://github.com/TheDeadcoder/civilmate-backend)** | Agentic GraphRAG over building codes - plans multi-step lookups across a code graph, then compares design drawings against site imagery to generate technical logs and blocker alerts | Neo4j · Qdrant · FastAPI |
-| **[InsightAI-python-backend](https://github.com/TheDeadcoder/InsightAI-python-backend)** | Microservices AI platform - tool-routed generation of quizzes and flashcards from PDFs and video, enforced structured output, and CLIP-based multimodal product search | LlamaIndex · Qdrant · CLIP · FastAPI |
-| **[Tokkhok-Backend](https://github.com/TheDeadcoder/Tokkhok-Backend)** | Personalised RAG chatbot for "Banglish" (romanised Bengali) with a custom transliteration pipeline, few-shot inference and configurable agent personas | FastAPI · Qdrant · PostgreSQL |
-| **[sust-backend](https://github.com/TheDeadcoder/sust-backend)** | Bebsha AI service layer - RAG product search, description generation, background removal | Flask · RAG |
+- **[dc_ops_environment](https://github.com/TheDeadcoder/dc_ops_environment)** · Physics-grounded datacenter RL environment on OpenEnv: RC thermal networks, continuous multi-objective rewards.
+- **[dc_ops_training](https://github.com/TheDeadcoder/dc_ops_training)** · Teacher-distilled SFT to GRPO on AMD MI300X. A multi-signal reward drove +188% composite reward and a 10x per-step gain on hard scenarios.
+- **[GeoQL-4B](https://github.com/TheDeadcoder/GeoQL-4B)** · Text-to-OverpassQL via SFT then GRPO, with a documented negative result on reward redundancy.
+- **[medical-cot-assistant](https://github.com/TheDeadcoder/medical-cot-assistant)** · Clinical chain-of-thought fine-tuning of a 20B model with QAT, exported to INT4 GGUF.
 
-### Applied Deep Learning
+### 🛡️ AI safety and security
 
-| Repository | Description | Stack |
-|---|---|---|
-| **[bd-prescription-medicine-recognize](https://github.com/TheDeadcoder/bd-prescription-medicine-recognize)** | ResNet50–CRNN for 78-class handwritten medicine-name recognition on Bangladeshi prescriptions. Hash-grouped StratifiedGroupKFold + SWA ensemble reached 92.53% test accuracy / 0.9234 macro-F1 (+6.44 pt over baseline) | PyTorch · CRNN · SWA · MLflow · Grad-CAM |
+- **[AI-safety-forensics](https://github.com/TheDeadcoder/AI-safety-forensics)** · Preregistered forensics separating information from attention in mid-task corrections. Corrective wording cut unsafe deletions to 0/48; naming the file alone did not.
+- **[AI-Security-Testing](https://github.com/TheDeadcoder/AI-Security-Testing)** · Red and blue agents for the Lambda and Berkeley AgentBeats Security Arena. PAIR-style attack refinement, adaptive prompt injection, a call-budgeted defender over A2A.
 
-### Systems & Reliability
+### 🤖 Agent orchestration
 
-| Repository | Description | Stack |
-|---|---|---|
-| **[SREGym](https://github.com/TheDeadcoder/SREGym)** | Contributed fault-injection scenarios to an incident-resolution benchmark for AI agents - Kafka poison-pill head-of-line blocking, CFS throttling brownout, and oscillating config corruption | Kubernetes · Kafka · Chaos engineering |
+- **[scout](https://github.com/TheDeadcoder/scout)** · Autonomous competitive intelligence. Scheduled agents resolve competitor changes into a bitemporal knowledge graph, then compile cited weekly briefs.
+- **[civilmate-backend](https://github.com/TheDeadcoder/civilmate-backend)** · Agentic GraphRAG over building codes. Plans multi-step lookups across a code graph, then checks drawings against site imagery.
+- **[InsightAI-python-backend](https://github.com/TheDeadcoder/InsightAI-python-backend)** · Microservices AI platform. Tool-routed generation from PDFs and video, plus CLIP-based multimodal product search.
+- **[Tokkhok-Backend](https://github.com/TheDeadcoder/Tokkhok-Backend)** · Personalised RAG for romanised Bengali with a custom transliteration pipeline.
 
-### Full-Stack Products
+### 📐 Applied ML
 
-| Repository | Description | Stack |
-|---|---|---|
-| **[nerdherd2ndrun](https://github.com/TheDeadcoder/nerdherd2ndrun)** | Collaborative productivity platform - shared notes, video calls, real-time quizzes, AI assistant | SvelteKit · Firebase |
-| **[coderhub](https://github.com/TheDeadcoder/coderhub)** | Developer community platform with blogging, skill-based search, and project management | SvelteKit · Vercel |
-| **[yobofrontend](https://github.com/TheDeadcoder/yobofrontend)** | Frontend for YoboSQL, a text-to-SQL conversational interface | TypeScript · SvelteKit |
-
-### Engineering Templates
-
-| Repository | Description | Stack |
-|---|---|---|
-| **[django-init-template](https://github.com/TheDeadcoder/django-init-template)** | Production-ready Django REST scaffold with PostgreSQL and Supabase auth | Django · DRF · Supabase |
-| **[nodejs-init](https://github.com/TheDeadcoder/nodejs-init)** | Express + TypeScript service scaffold with Helmet, Swagger, and Supabase auth | TypeScript · Express |
+- **[bd-prescription-medicine-recognize](https://github.com/TheDeadcoder/bd-prescription-medicine-recognize)** · ResNet50-CRNN for handwritten medicine names. Hash-grouped folds and an SWA ensemble reached 92.53% accuracy, 0.9234 macro-F1.
 
 ---
 
-## Open Models & Datasets
+## 📦 Open Models and Datasets
 
-Published on [Hugging Face @Melikshah](https://huggingface.co/Melikshah).
+On [Hugging Face `@Melikshah`](https://huggingface.co/Melikshah).
 
-| Artifact | Description |
-|---|---|
-| **GPT-OSS-20B-Clinical-CoT (GGUF)** | 4-bit quantised 20B model fine-tuned for clinical chain-of-thought reasoning, optimised for local inference |
-| **dc_ops_grpo_lora** | GRPO-trained LoRA adapter for the datacenter operations environment |
-| **qwen3.5-4b-base-blindspots** | Adversarial evaluation set probing architectural and logical failure modes of Qwen3.5-4B-Base |
-| **Shajgoj & General Products** | 20,000+ item multimodal datasets for image–text retrieval |
-| **Prothom Alo News** | Large-scale Bengali news corpus for low-resource NLP research |
+- **GPT-OSS-20B-Clinical-CoT** · 4-bit quantised 20B model for clinical chain-of-thought reasoning
+- **dc_ops_grpo_lora** · GRPO-trained LoRA adapter for the datacenter operations environment
+- **qwen3.5-4b-base-blindspots** · Adversarial evaluation set probing Qwen3.5-4B-Base failure modes
+- **Shajgoj and General Products** · 20,000+ item multimodal datasets for image-text retrieval
+- **Prothom Alo News** · Large-scale Bengali news corpus for low-resource NLP
 
 ---
 
-## Experience
+## 💼 Experience
 
-| Role | Organisation | Focus |
-|---|---|---|
-| Lecturer, CSE | **BRAC University** · present | Machine Learning, Operating Systems, Software Engineering, System Analysis & Design |
-| Founding Engineer (Backend & AI) | **Intellesphere** · 2024–25 | Banking RAG with hybrid indexing and Keycloak-secured access, CLIP multimodal search, multimodal civil-engineering automation |
-| Founding Engineer (Backend & AI) | **Oleyn** · 2024 | Bengali ASR with NeMo speaker diarization, agentic CRM and campaign system, legal research assistant |
-| Software Engineer (Backend) | **Priyo** · 2024 | Django support agent at concurrency, warehousing REST APIs, campaign and analytics infrastructure |
-| Software Engineer Intern | **Yobo** · 2024 | Text-to-SQL chat interface on LangChain, FastAPI and SvelteKit |
+- **BRAC University** · Lecturer, CSE · present
+- **Sluqe** · Software Engineer, Full Stack and AI · 2025 to 2026
+- **Oleyn** · Founding Engineer, Backend and AI · 2024
+- **Priyo** · Software Engineer, Backend · 2024
+- **Yobo** · Software Engineer Intern · 2024
 
 ---
 
-## Technical Stack
+## 🧰 Stack
 
-| Domain | Tools |
-|---|---|
-| **Languages** | Python · C++ · Java · TypeScript · JavaScript · SQL |
-| **Training & Inference** | PyTorch · TRL · Unsloth · PEFT/LoRA · vLLM · llama.cpp · ROCm · Transformers · NeMo · scikit-learn · MLflow |
-| **Reinforcement Learning** | GRPO family (DAPO, Dr. GRPO, GSPO, RLOO) · reward design · custom verifiable environments · OpenEnv |
-| **Agentic Systems** | Tool calling · agent memory · multi-step orchestration · LangChain · LlamaIndex · Genkit · RAG · GraphRAG · hybrid retrieval · structured output · eval harnesses |
-| **Backend & APIs** | FastAPI · Django · Spring Boot · Express · Firebase Cloud Functions · Nginx · Keycloak · Stripe |
-| **Frontend & Mobile** | Next.js · React · SvelteKit · Flutter · Tailwind CSS |
-| **Data & Vector Stores** | PostgreSQL · MySQL · Redis · Qdrant · ChromaDB · Neo4j · Supabase · Turso |
-| **Infrastructure** | Docker · Kubernetes · AWS · GCP · Vercel · Modal · GitHub Actions · PostHog |
+**Languages**
+<br><img src="https://img.shields.io/badge/Python-1f2328?style=flat-square&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/C%2B%2B-1f2328?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
+<img src="https://img.shields.io/badge/Java-1f2328?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
+<img src="https://img.shields.io/badge/TypeScript-1f2328?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+<img src="https://img.shields.io/badge/SQL-1f2328?style=flat-square&logo=postgresql&logoColor=white" alt="SQL">
+
+**Training and inference**
+<br><img src="https://img.shields.io/badge/PyTorch-1f2328?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
+<img src="https://img.shields.io/badge/Hugging%20Face-1f2328?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face">
+<img src="https://img.shields.io/badge/TRL-1f2328?style=flat-square" alt="TRL">
+<img src="https://img.shields.io/badge/Unsloth-1f2328?style=flat-square" alt="Unsloth">
+<img src="https://img.shields.io/badge/vLLM-1f2328?style=flat-square&logo=vllm&logoColor=white" alt="vLLM">
+<img src="https://img.shields.io/badge/llama.cpp-1f2328?style=flat-square" alt="llama.cpp">
+<img src="https://img.shields.io/badge/ROCm-1f2328?style=flat-square&logo=amd&logoColor=white" alt="ROCm">
+<img src="https://img.shields.io/badge/MLflow-1f2328?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow">
+
+**Agents and backend**
+<br><img src="https://img.shields.io/badge/LangChain-1f2328?style=flat-square&logo=langchain&logoColor=white" alt="LangChain">
+<img src="https://img.shields.io/badge/LlamaIndex-1f2328?style=flat-square" alt="LlamaIndex">
+<img src="https://img.shields.io/badge/A2A-1f2328?style=flat-square" alt="A2A">
+<img src="https://img.shields.io/badge/FastAPI-1f2328?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+<img src="https://img.shields.io/badge/Django-1f2328?style=flat-square&logo=django&logoColor=white" alt="Django">
+<img src="https://img.shields.io/badge/Spring%20Boot-1f2328?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot">
+<img src="https://img.shields.io/badge/Next.js-1f2328?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
+<img src="https://img.shields.io/badge/Flutter-1f2328?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
+
+**Data and infrastructure**
+<br><img src="https://img.shields.io/badge/PostgreSQL-1f2328?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+<img src="https://img.shields.io/badge/Redis-1f2328?style=flat-square&logo=redis&logoColor=white" alt="Redis">
+<img src="https://img.shields.io/badge/Qdrant-1f2328?style=flat-square&logo=qdrant&logoColor=white" alt="Qdrant">
+<img src="https://img.shields.io/badge/Neo4j-1f2328?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j">
+<img src="https://img.shields.io/badge/Docker-1f2328?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+<img src="https://img.shields.io/badge/Kubernetes-1f2328?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
+<img src="https://img.shields.io/badge/AWS-1f2328?style=flat-square" alt="AWS">
+<img src="https://img.shields.io/badge/GCP-1f2328?style=flat-square&logo=googlecloud&logoColor=white" alt="GCP">
+<img src="https://img.shields.io/badge/Terraform-1f2328?style=flat-square&logo=terraform&logoColor=white" alt="Terraform">
 
 ---
 
-## GitHub Activity
+## 🏆 Honours
+
+| Award | Event | Year |
+|---|---|:--:|
+| Champion | IUT National ICT Fest, OpenAPI Hackathon | 2024 |
+| Champion | CodeCrafters Dev Sprint Hackathon, BUET | 2024 |
+| Champion | SUST CSE Carnival Hackathon | 2024 |
+| Runner-up | Gen-Dev Hackathon, Acme AI | 2024 |
+| Honourable mention | Bangladesh Blockchain Olympiad, IDSOL world finalist | 2024 |
+| Champion | Cefalo ITverse Project Showcase | 2023 |
+
+---
 
 <p align="center">
   <picture>
@@ -166,21 +154,6 @@ Published on [Hugging Face @Melikshah](https://huggingface.co/Melikshah).
     <img alt="Language distribution" src="https://raw.githubusercontent.com/TheDeadcoder/TheDeadcoder/main/assets/languages-light.svg" width="49%">
   </picture>
 </p>
-
----
-
-## Selected Honours
-
-| Award | Event | Year |
-|---|---|---|
-| Champion | IUT 11th National ICT Fest - OpenAPI Hackathon | 2024 |
-| Champion | CodeCrafters Dev Sprint Hackathon, BUET | 2024 |
-| Champion | SUST CSE Carnival Hackathon | 2024 |
-| Runner-Up | Gen-Dev Hackathon, Acme AI | 2024 |
-| Honourable Mention | Bangladesh Blockchain Olympiad (BCOLBD) · IDSOL World Finalist | 2024 |
-| Champion | Cefalo ITverse Project Showcase | 2023 |
-
----
 
 <p align="center">
   <sub>
