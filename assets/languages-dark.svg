@@ -16,12 +16,12 @@
     <line x1="24" y1="44" x2="416" y2="44" stroke="#3d444d"/>
     <mask id="bar"><rect x="24" y="66" width="392" height="9" rx="4.5" fill="#fff"/></mask>
   <g mask="url(#bar)">
-    <rect x="24.00" y="66" width="178.30" height="9" fill="#3572A5"/>
-    <rect x="202.30" y="66" width="113.03" height="9" fill="#DA5B0B"/>
-    <rect x="315.33" y="66" width="39.19" height="9" fill="#ff3e00"/>
-    <rect x="354.53" y="66" width="27.99" height="9" fill="#3178c6"/>
-    <rect x="382.52" y="66" width="20.45" height="9" fill="#87AED7"/>
-    <rect x="402.97" y="66" width="5.23" height="9" fill="#e34c26"/>
+    <rect x="24.00" y="66" width="178.45" height="9" fill="#3572A5"/>
+    <rect x="202.45" y="66" width="112.96" height="9" fill="#DA5B0B"/>
+    <rect x="315.40" y="66" width="39.16" height="9" fill="#ff3e00"/>
+    <rect x="354.57" y="66" width="27.97" height="9" fill="#3178c6"/>
+    <rect x="382.54" y="66" width="20.44" height="9" fill="#87AED7"/>
+    <rect x="402.98" y="66" width="5.22" height="9" fill="#e34c26"/>
     <rect x="408.20" y="66" width="7.80" height="9" fill="#9198a1"/>
   </g>
     <circle cx="28" cy="104" r="4.5" fill="#3572A5"/>
