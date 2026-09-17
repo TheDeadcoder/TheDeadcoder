@@ -16,13 +16,13 @@
     <line x1="24" y1="44" x2="416" y2="44" stroke="#d1d9e0"/>
     <mask id="bar"><rect x="24" y="66" width="392" height="9" rx="4.5" fill="#fff"/></mask>
   <g mask="url(#bar)">
-    <rect x="24.00" y="66" width="178.45" height="9" fill="#3572A5"/>
-    <rect x="202.45" y="66" width="112.96" height="9" fill="#DA5B0B"/>
-    <rect x="315.40" y="66" width="39.16" height="9" fill="#ff3e00"/>
-    <rect x="354.57" y="66" width="27.97" height="9" fill="#3178c6"/>
-    <rect x="382.54" y="66" width="20.44" height="9" fill="#87AED7"/>
-    <rect x="402.98" y="66" width="5.22" height="9" fill="#e34c26"/>
-    <rect x="408.20" y="66" width="7.80" height="9" fill="#59636e"/>
+    <rect x="24.00" y="66" width="178.38" height="9" fill="#3572A5"/>
+    <rect x="202.38" y="66" width="112.91" height="9" fill="#DA5B0B"/>
+    <rect x="315.29" y="66" width="39.15" height="9" fill="#ff3e00"/>
+    <rect x="354.44" y="66" width="27.96" height="9" fill="#3178c6"/>
+    <rect x="382.40" y="66" width="20.43" height="9" fill="#87AED7"/>
+    <rect x="402.83" y="66" width="5.22" height="9" fill="#e34c26"/>
+    <rect x="408.06" y="66" width="7.94" height="9" fill="#59636e"/>
   </g>
     <circle cx="28" cy="104" r="4.5" fill="#3572A5"/>
     <text x="40" y="108" class="k">Python</text>
