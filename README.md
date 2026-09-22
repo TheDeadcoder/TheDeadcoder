@@ -27,7 +27,11 @@ Based in Dhaka, open to remote research collaboration.
 
 ---
 
-## Publication
+## Publications
+
+**Luck Is Not Skill: When Do Paired Rollouts Help Group-Relative RL of LLM Agents?**
+<br>N. Sakib · arXiv preprint, 2026
+<br>[arXiv:2609.24144](https://arxiv.org/abs/2609.24144) · [Code](https://github.com/TheDeadcoder/paired-rollouts)
 
 **MemAgent: A Cache-Inspired Framework for Augmenting Conversational Web Agents with Task-Specific Information**
 <br>N. Sakib, P. Barai, S. I. Parisa, A. Iqbal · WOA 2025, *From Objects to Agents*, Trento, Italy
