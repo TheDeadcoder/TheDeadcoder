@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  AI for SWE · LLM post-training · AI safety · Agent orchestration
+  AI for SWE & SRE · LLM post-training · AI safety · Agent orchestration
 </p>
 
 <p align="center">
@@ -29,6 +29,10 @@ Based in Dhaka, open to remote research collaboration.
 
 ## Publications
 
+**Passing Without Repairing: Verifier Blind Spots in a Live SRE Agent Benchmark**
+<br>N. Sakib · NeurIPS 2026 Workshop, *Who Verifies the Agents?*, Sydney, Australia · Poster
+<br>*Paper forthcoming* · [Code](https://github.com/TheDeadcoder/SREMut)
+
 **Luck Is Not Skill: When Do Paired Rollouts Help Group-Relative RL of LLM Agents?**
 <br>N. Sakib · arXiv preprint, 2026
 <br>[arXiv:2609.24144](https://arxiv.org/abs/2609.24144) · [Code](https://github.com/TheDeadcoder/paired-rollouts)
@@ -44,7 +48,7 @@ Based in Dhaka, open to remote research collaboration.
 ### 🔧 AI for software engineering and SRE
 
 - **[SREGym `#790`](https://github.com/SREGym/SREGym/pull/790)** · Upstream contribution to the incident-resolution benchmark. A Kafka poison-pill head-of-line block, with an oracle that proves recovery in Kafka itself.
-- **[SREMut](https://github.com/TheDeadcoder/SREMut)** · Follow-up to the SREGym work. Mutation testing a benchmark's own verifier to measure what a passing verdict certifies. *In progress.*
+- **[SREMut](https://github.com/TheDeadcoder/SREMut)** · Follow-up to the SREGym work. Mutation testing a benchmark's own verifier to measure what a passing verdict certifies. *Working on NeurIPS 2026 workshop Reviews*
 
 ### 🧪 LLM post-training
 
