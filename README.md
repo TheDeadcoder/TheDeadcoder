@@ -30,7 +30,7 @@ Based in Dhaka, open to remote research collaboration.
 ## Publications
 
 **Passing Without Repairing: Verifier Blind Spots in a Live SRE Agent Benchmark**
-<br>N. Sakib · NeurIPS 2026 Workshop, *Who Verifies the Agents?*, Sydney, Australia · Poster
+<br>N. Sakib · NeurIPS 2026 Workshop, *Who Verifies the Agents?*
 <br>*Paper forthcoming* · [Code](https://github.com/TheDeadcoder/SREMut)
 
 **Luck Is Not Skill: When Do Paired Rollouts Help Group-Relative RL of LLM Agents?**
