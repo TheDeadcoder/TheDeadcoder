@@ -16,20 +16,20 @@
     <line x1="24" y1="44" x2="416" y2="44" stroke="#3d444d"/>
     <mask id="bar"><rect x="24" y="66" width="392" height="9" rx="4.5" fill="#fff"/></mask>
   <g mask="url(#bar)">
-    <rect x="24.00" y="66" width="193.08" height="9" fill="#3572A5"/>
-    <rect x="217.08" y="66" width="105.04" height="9" fill="#DA5B0B"/>
-    <rect x="322.12" y="66" width="36.42" height="9" fill="#ff3e00"/>
-    <rect x="358.54" y="66" width="26.02" height="9" fill="#3178c6"/>
-    <rect x="384.56" y="66" width="19.01" height="9" fill="#87AED7"/>
-    <rect x="403.56" y="66" width="4.86" height="9" fill="#e34c26"/>
-    <rect x="408.42" y="66" width="7.58" height="9" fill="#9198a1"/>
+    <rect x="24.00" y="66" width="193.67" height="9" fill="#3572A5"/>
+    <rect x="217.67" y="66" width="104.61" height="9" fill="#DA5B0B"/>
+    <rect x="322.28" y="66" width="36.27" height="9" fill="#ff3e00"/>
+    <rect x="358.55" y="66" width="25.91" height="9" fill="#3178c6"/>
+    <rect x="384.46" y="66" width="18.93" height="9" fill="#87AED7"/>
+    <rect x="403.39" y="66" width="4.84" height="9" fill="#e34c26"/>
+    <rect x="408.22" y="66" width="7.78" height="9" fill="#9198a1"/>
   </g>
     <circle cx="28" cy="104" r="4.5" fill="#3572A5"/>
     <text x="40" y="108" class="k">Python</text>
-    <text x="200" y="108" class="s" text-anchor="end">49.3%</text>
+    <text x="200" y="108" class="s" text-anchor="end">49.4%</text>
     <circle cx="228" cy="104" r="4.5" fill="#DA5B0B"/>
     <text x="240" y="108" class="k">Jupyter Notebook</text>
-    <text x="400" y="108" class="s" text-anchor="end">26.8%</text>
+    <text x="400" y="108" class="s" text-anchor="end">26.7%</text>
     <circle cx="28" cy="130" r="4.5" fill="#ff3e00"/>
     <text x="40" y="134" class="k">Svelte</text>
     <text x="200" y="134" class="s" text-anchor="end">9.3%</text>
@@ -44,6 +44,6 @@
     <text x="400" y="160" class="s" text-anchor="end">1.2%</text>
     <circle cx="28" cy="182" r="4.5" fill="#9198a1"/>
     <text x="40" y="186" class="k">Other</text>
-    <text x="200" y="186" class="s" text-anchor="end">1.9%</text>
+    <text x="200" y="186" class="s" text-anchor="end">2.0%</text>
   </g>
 </svg>
