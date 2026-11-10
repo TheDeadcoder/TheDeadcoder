@@ -16,29 +16,29 @@
     <line x1="24" y1="44" x2="416" y2="44" stroke="#3d444d"/>
     <mask id="bar"><rect x="24" y="66" width="392" height="9" rx="4.5" fill="#fff"/></mask>
   <g mask="url(#bar)">
-    <rect x="24.00" y="66" width="201.71" height="9" fill="#3572A5"/>
-    <rect x="225.71" y="66" width="92.29" height="9" fill="#DA5B0B"/>
-    <rect x="318.00" y="66" width="43.89" height="9" fill="#ff3e00"/>
-    <rect x="361.90" y="66" width="22.86" height="9" fill="#3178c6"/>
-    <rect x="384.75" y="66" width="16.70" height="9" fill="#87AED7"/>
-    <rect x="401.45" y="66" width="6.33" height="9" fill="#f1e05a"/>
-    <rect x="407.78" y="66" width="8.22" height="9" fill="#9198a1"/>
+    <rect x="24.00" y="66" width="201.17" height="9" fill="#3572A5"/>
+    <rect x="225.17" y="66" width="92.04" height="9" fill="#DA5B0B"/>
+    <rect x="317.20" y="66" width="44.74" height="9" fill="#ff3e00"/>
+    <rect x="361.95" y="66" width="22.79" height="9" fill="#3178c6"/>
+    <rect x="384.74" y="66" width="16.65" height="9" fill="#87AED7"/>
+    <rect x="401.40" y="66" width="6.40" height="9" fill="#f1e05a"/>
+    <rect x="407.80" y="66" width="8.20" height="9" fill="#9198a1"/>
   </g>
     <circle cx="28" cy="104" r="4.5" fill="#3572A5"/>
     <text x="40" y="108" class="k">Python</text>
-    <text x="200" y="108" class="s" text-anchor="end">51.5%</text>
+    <text x="200" y="108" class="s" text-anchor="end">51.3%</text>
     <circle cx="228" cy="104" r="4.5" fill="#DA5B0B"/>
     <text x="240" y="108" class="k">Jupyter Notebook</text>
     <text x="400" y="108" class="s" text-anchor="end">23.5%</text>
     <circle cx="28" cy="130" r="4.5" fill="#ff3e00"/>
     <text x="40" y="134" class="k">Svelte</text>
-    <text x="200" y="134" class="s" text-anchor="end">11.2%</text>
+    <text x="200" y="134" class="s" text-anchor="end">11.4%</text>
     <circle cx="228" cy="130" r="4.5" fill="#3178c6"/>
     <text x="240" y="134" class="k">TypeScript</text>
     <text x="400" y="134" class="s" text-anchor="end">5.8%</text>
     <circle cx="28" cy="156" r="4.5" fill="#87AED7"/>
     <text x="40" y="160" class="k">NewLisp</text>
-    <text x="200" y="160" class="s" text-anchor="end">4.3%</text>
+    <text x="200" y="160" class="s" text-anchor="end">4.2%</text>
     <circle cx="228" cy="156" r="4.5" fill="#f1e05a"/>
     <text x="240" y="160" class="k">JavaScript</text>
     <text x="400" y="160" class="s" text-anchor="end">1.6%</text>
